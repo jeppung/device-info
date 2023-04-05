@@ -36,6 +36,9 @@ class AuthController extends GetxController {
       var data = await db!
           .query("users", where: "username = ?", whereArgs: [username]);
 
+      if (data.length <= 0)
+        return Future.error("Username or password is incorrect");
+
       User user = User.fromJson(data[0]);
 
       if (Crypt(user.password).match(password)) {
