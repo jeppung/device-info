@@ -1,0 +1,43 @@
+name: synapsis_project
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+dependencies:
+  battery_info: ^1.1.1
+  crypt: ^4.2.1
+  cupertino_icons: ^1.0.2
+  device_info_plus: ^8.1.0
+  flutter:
+    sdk: flutter
+  flutter_login: ^4.1.1
+  flutter_nfc_compatibility: ^0.0.4
+  geolocator: ^9.0.2
+  get: 4.6.5
+  get_storage: ^2.1.1
+  google_maps_flutter: ^2.2.5
+  image_picker: ^0.8.7+1
+  intl: ^0.18.0
+  local_auth: ^2.1.6
+  nfc_manager: ^3.2.0
+  open_settings: ^2.0.2
+  package_info_plus: ^3.0.3
+  path_provider: ^2.0.14
+  permission_handler: ^10.2.0
+  qr_code_scanner: ^1.0.1
+  qr_flutter: ^4.0.0
+  sensors_plus: ^2.0.2
+  sqflite: ^2.2.6
+
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
