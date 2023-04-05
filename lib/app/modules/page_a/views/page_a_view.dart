@@ -95,13 +95,9 @@ z: ${controller.data3.value.z.toStringAsFixed(2)}
                                   children: [
                                     Obx(
                                       () => controller.isClicked.value == true
-                                          ? Container(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 75),
+                                          ? Center(
                                               child:
                                                   CircularProgressIndicator(),
-                                              width: 2,
-                                              height: 25,
                                             )
                                           : OutlinedButton(
                                               onPressed: () async {
