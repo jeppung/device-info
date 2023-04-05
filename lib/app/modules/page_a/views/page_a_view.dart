@@ -123,10 +123,13 @@ z: ${controller.data3.value.z.toStringAsFixed(2)}
                                             ),
                                     ),
                                     const SizedBox(height: 5),
-                                    Text("""
+                                    Text(
+                                      """
 Latitude: ${controller.lat.value}
 Longitude: ${controller.long.value}
-""")
+"""
+                                          .trimLeft(),
+                                    )
                                   ],
                                 )
                               ],
