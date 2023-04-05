@@ -20,6 +20,7 @@ class HomeController extends GetxController {
   var cameraLat = 0.0.obs;
   var cameraLong = 0.0.obs;
   var cameraMagnetometer = MagnetometerEvent(0, 0, 0).obs;
+  var cameraTime = DateTime.now();
 
   late TextEditingController textC;
 
@@ -79,6 +80,7 @@ class HomeController extends GetxController {
         var subscription;
 
         var image = await ImagePicker().pickImage(source: ImageSource.camera);
+        cameraTime = DateTime.now();
 
         if (image == null) {
           return null;

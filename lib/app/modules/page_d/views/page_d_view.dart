@@ -21,9 +21,10 @@ class PageDView extends GetView<HomeController> {
                         children: [
                           Container(
                             width: double.infinity,
+                            height: double.infinity,
                             child: Image.file(
                               File(controller.imagePath.value),
-                              fit: BoxFit.fitWidth,
+                              fit: BoxFit.fill,
                             ),
                           ),
                           Column(
@@ -93,7 +94,7 @@ class PageDView extends GetView<HomeController> {
                             bottom: 10,
                             child: Text(
                               DateFormat("d MMMM yyyy h:mm:ss")
-                                  .format(controller.time.value),
+                                  .format(controller.cameraTime),
                               style: Theme.of(context)
                                   .textTheme
                                   .bodyLarge!
