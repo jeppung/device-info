@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:synapsis_project/app/modules/home/controllers/home_controller.dart';
-
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:synapsis_project/app/modules/page_b/utils/android_data_map.dart';

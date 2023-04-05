@@ -1,6 +1,5 @@
 import 'package:crypt/crypt.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_nfc_compatibility/flutter_nfc_compatibility.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -8,7 +7,6 @@ import 'package:local_auth/local_auth.dart';
 import 'package:nfc_manager/nfc_manager.dart';
 import 'package:open_settings/open_settings.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
-
 import 'package:synapsis_project/app/data/db/db_helper.dart';
 import 'package:synapsis_project/app/data/models/user.dart';
 import 'package:synapsis_project/app/routes/app_pages.dart';
