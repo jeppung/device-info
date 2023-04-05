@@ -23,8 +23,10 @@ class HomeView extends GetView<HomeController> {
             IconButton(
               onPressed: () {
                 final box = GetStorage();
-
                 box.write('isAuthenticate', false);
+
+                Get.snackbar("Success", "Logout success!",
+                    duration: Duration(seconds: 1));
 
                 Get.offAllNamed(Routes.AUTH);
               },
