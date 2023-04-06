@@ -31,18 +31,18 @@ class HomeController extends GetxController {
 
     Timer.periodic(Duration(seconds: 1), (timer) {
       time.value = DateTime.now();
-    });
 
-    accelerometerEvents.listen((event) {
-      data1.value = event;
-    });
+      accelerometerEvents.listen((event) {
+        data1.value = event;
+      });
 
-    gyroscopeEvents.listen((event) {
-      data2.value = event;
-    });
+      gyroscopeEvents.listen((event) {
+        data2.value = event;
+      });
 
-    magnetometerEvents.listen((event) {
-      data3.value = event;
+      magnetometerEvents.listen((event) {
+        data3.value = event;
+      });
     });
   }
 

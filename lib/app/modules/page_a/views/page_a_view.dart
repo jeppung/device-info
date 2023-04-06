@@ -54,7 +54,7 @@ class PageAView extends GetView<HomeController> {
                               children: [
                                 Text("Accelerometer"),
                                 Text("""
-                                Accelerometer Event
+                                Accelerometer Event/s
 x: ${controller.data1.value.x.toStringAsFixed(2)}
 y: ${controller.data1.value.y.toStringAsFixed(2)}
 z: ${controller.data1.value.z.toStringAsFixed(2)}
@@ -66,7 +66,7 @@ z: ${controller.data1.value.z.toStringAsFixed(2)}
                               children: [
                                 Text("Gyroscope"),
                                 Text("""
-                                Gyroscope Event
+                                Gyroscope Event/s
 x: ${controller.data2.value.x.toStringAsFixed(2)}
 y: ${controller.data2.value.y.toStringAsFixed(2)}
 z: ${controller.data2.value.z.toStringAsFixed(2)}
@@ -78,7 +78,7 @@ z: ${controller.data2.value.z.toStringAsFixed(2)}
                               children: [
                                 Text("Magnetometer"),
                                 Text("""
-                                Magnetometer Event
+                                Magnetometer Event/s
 x: ${controller.data3.value.x.toStringAsFixed(2)}
 y: ${controller.data3.value.y.toStringAsFixed(2)}
 z: ${controller.data3.value.z.toStringAsFixed(2)}
